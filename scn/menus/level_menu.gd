@@ -9,7 +9,7 @@ func _ready() -> void:
 	button_resume.button_up.connect(resume_game)
 	button_exit.button_up.connect(exit_game)
 
-func _unhandled_input(event: InputEvent) -> void:
+func _input(event: InputEvent) -> void:
 	if event is InputEventKey and event.is_action_pressed("pause"):
 		get_viewport().set_input_as_handled()
 		resume_game()

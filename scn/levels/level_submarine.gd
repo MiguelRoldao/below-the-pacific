@@ -1,6 +1,6 @@
 extends Node3D
 
-@onready var pause_menu_res := preload("res://scn/level_menu.tscn")
+@onready var pause_menu_res := preload("res://scn/menus/level_menu.tscn")
 
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED

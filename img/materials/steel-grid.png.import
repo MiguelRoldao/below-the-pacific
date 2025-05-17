@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://barycqx4ns8mu"
-path.s3tc="res://.godot/imported/steel-grid.png-c5b25a85667cbc3930a22c6109874a7c.s3tc.ctex"
+path.s3tc="res://.godot/imported/steel-grid.png-c3ce132e53cd81413ab11ef590e97259.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://img/steel-grid.png"
-dest_files=["res://.godot/imported/steel-grid.png-c5b25a85667cbc3930a22c6109874a7c.s3tc.ctex"]
+source_file="res://img/materials/steel-grid.png"
+dest_files=["res://.godot/imported/steel-grid.png-c3ce132e53cd81413ab11ef590e97259.s3tc.ctex"]
 
 [params]
 
