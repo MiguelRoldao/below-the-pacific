@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cntouqcadn2ti"]
+
+[ext_resource type="Script" uid="uid://nmttrlfw4aap" path="res://scn/level_submarine.gd" id="1_uqw1n"]
+[ext_resource type="PackedScene" uid="uid://bjfbu3otohrrb" path="res://scn/player_controller.tscn" id="1_ypm3k"]
+[ext_resource type="PackedScene" uid="uid://7xb71w08y3nm" path="res://scn/submarine.tscn" id="2_uqw1n"]
+
+[node name="LevelSubmarine" type="Node3D"]
+script = ExtResource("1_uqw1n")
+
+[node name="PlayerController" parent="." instance=ExtResource("1_ypm3k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.932374, 0)
+
+[node name="Submarine" parent="." instance=ExtResource("2_uqw1n")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1, -2)
+light_color = Color(1, 0.745098, 0.643137, 1)

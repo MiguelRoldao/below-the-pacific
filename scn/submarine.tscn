@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://7xb71w08y3nm"]
+
+[ext_resource type="PackedScene" uid="uid://cfyux8sw2ejmk" path="res://blender/le-sub.blend" id="1_qse0l"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ldeky"]
+size = Vector3(2.5, 0.1, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1m4bf"]
+size = Vector3(0.1, 2.4, 7)
+
+[node name="Submarine" type="Node3D"]
+
+[node name="le-sub" parent="." instance=ExtResource("1_qse0l")]
+
+[node name="Chassis" type="StaticBody3D" parent="le-sub"]
+
+[node name="Ceiling" type="CollisionShape3D" parent="le-sub/Chassis"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.25, 0)
+shape = SubResource("BoxShape3D_ldeky")
+
+[node name="Floor" type="CollisionShape3D" parent="le-sub/Chassis"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+shape = SubResource("BoxShape3D_ldeky")
+
+[node name="WallL" type="CollisionShape3D" parent="le-sub/Chassis"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3, 1.1, 0)
+shape = SubResource("BoxShape3D_1m4bf")
+
+[node name="WallR" type="CollisionShape3D" parent="le-sub/Chassis"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3, 1.1, 0)
+shape = SubResource("BoxShape3D_1m4bf")
